@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <!-- Set character encoding to UTF-8 -->
+    <meta charset="UTF-8">
+     <!-- Set compatibility mode to IE=edge -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Set viewport width to device width and initial scale to 1.0 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Set the title of the document -->
+    <title>Document</title>
+    <!-- Link to an external stylesheet -->
+    <link rel="stylesheet" href="cart_style.css">
+    <link rel="stylesheet" href="navigation.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+          <div>
+            <a href="Main.html"><img src="main_img/logo.png" alt="logo" class="logo" id="logo_image_link"></a>
+          </div>
+          <input type="checkbox" id="click">
+          <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+          </label>
+          <ul>
+            <li><a href="Main.html">Home</a></li>
+            <li><a href="#products">Store</a></li>
+            <li><a href="leaderboard.html">Leaderboard</a></li>
+            <li><a href="quiz.html">Test Your Knowledge</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+          </ul>
+        </nav>
+    <div>
+
+    <div>
+        <button id="increaseFont">+</button>
+        <button id="decreaseFont">-</button>
+    </div> 
+
+    
+    <div class="container_cart">
+        <header>
+            <h1>Shopping Store</h1>
+            <div class="shopping">
+                <img src="image/shopping.svg">
+                <span class="quantity">0</span>
+            </div>
+        </header>
+
+        <div class="list">
+          
+        </div>
+
+    </div>
+
+   
+    
+    <div class="card">
+        <h1>Your Cart</h1>
+        <ul class="listCard">
+        </ul>
+        <div class="checkOut">
+            <div class="total">0</div>
+            <div class="closeShopping"></div>
+            <input type="button" class="flip" value="Place Order" onClick="window.open('cart_form.html', '_self'); window.top.close();" style="width: 500px; height: 70px;font-weight: bold;" />
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+    
+</body>
+</html>

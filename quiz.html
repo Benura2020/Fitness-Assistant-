@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,700,1,200" />
+    <title>Fitsense</title>
+    <link rel="icon" type="image/x-icon" href="main_img/logo_tab.png">
+  </head>
+<body>
+
+    
+    <div class="container">
+        <video playsinline autoplay muted loop poster="polina.jpg" id="bg-video" >
+            <source src="quiz/bg-video-2.mp4" type="video/mp4">
+        </video>
+        <nav>
+          <div>
+              <a href=""><img src="main_img/logo.png" alt="logo" class="logo" id="logo_image_link"></a>
+          </div>
+          <input type="checkbox" id="click">
+            <label for="click" class="menu-btn">
+              <i class="fas fa-bars"></i>
+            </label>
+          <ul>
+            <li><a href="Main.html">Home</a></li>
+              <li><a href="cart.html">Store</a></li>
+              <li><a href="leaderboard.html">Leaderboard</a></li>
+              <li><a href="quiz.html">Test Your Knowledge</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="about_us.html">About Us</a></li>
+          </ul>
+      </nav>
+          <div class="start_btn"><button>Start Quiz</button></div>
+         <div class="info_box">
+        <div class="info-title"><span>Some Rules of this Quiz</span></div>
+        <div class="info-list">
+            <div class="info">1. You will have only <span>15 seconds</span> per each question.</div>
+            <div class="info">2. Once you select your answer, it can't be undone.</div>
+            <div class="info">3. You can't select any option once time goes off.</div>
+            <div class="info">4. You can't exit from the Quiz while you're playing.</div>
+            <div class="info">5. You'll get points on the basis of your correct answers.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+        </div>
+
+        <div class="quiz_box">
+        <header>
+            <div class="title">Awesome Quiz Application</div>
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                
+            </div>
+            <div class="option_list">
+                
+            </div>
+        </section>
+
+        
+        <footer>
+            <div class="total_que">
+                
+            </div>
+            <button class="next_btn">Next Que</button>
+        </footer>
+    </div>
+
+ 
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">You've completed the Quiz!</div>
+        <div class="score_text">
+            
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+            <button class="quit">Quit Quiz</button>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <footer class="footer"> 
+      <div id="footer_content">
+        <div class="footer__addr">
+            <a class="logo" href="Main.html"> <img src="main_img/logo.png" alt="fitsense logo" class="logo" id="logo_image_link"> </a> 
+          <h2>CONTACT US</h2>
+          <address>
+            5LB, GP Square, Colombo 00400
+            <br> 
+            011XXXXXXX  
+            <a class="footer__btn" href="benura.20220461@iit.ac.lk">Email Us</a>
+          </address>
+        </div>
+        <div class="comment_section">
+          <form onsubmit="return validateForm()" id="feedback-form">
+              <p><label for="name">Name*</label></p>
+              <input type="text" id="name" name="name" placeholder="Full Name ....">
+              <p><label for="email">Email*</label></p>
+              <input type="email" id="email" name="email" placeholder="Email Address ....">
+              <p><label for="comments">Comments</label></p>
+              <textarea id="comments" name="comments" rows="4" cols="20" placeholder="Type Your Comment ...."></textarea>
+              <p><label for="rating">Rate Us*</label></p>
+              <select id="rating" name="rating">
+                <option value="" class="comment_option" hidden>Select one</option>
+                <option value="poor" class="comment_option">Poor</option>
+                <option value="fair" class="comment_option">Fair</option>
+                <option value="good" class="comment_option">Good</option>
+                <option value="excellent" class="comment_option">Excellent</option>
+              </select>
+              <input type="submit" value="Submit" class="footer__btn">
+              <input type="reset" value="Reset" class="footer__btn">
+          </form>
+        </div>
+      </div>
+    <div class="legal">
+      <p>Page EDITOR - <a href="newEditor-Benura.html">Benura Wickramanayake</a></p>
+    </div>
+</footer>
+
+    <script src="quiz.js"></script>
+
+    <script src="quizscript.js"></script>
+
+</body>
+</html>
